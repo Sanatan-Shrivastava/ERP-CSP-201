@@ -1,0 +1,26 @@
+{
+  "name": "erp-csp-201",
+  "version": "1.0.0",
+  "description": "ERP for IIITK, CSE Fall 2019.",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanatan-Shrivastava/ERP-CSP-201.git"
+  },
+  "keywords": [
+    "ERP",
+    "IIITK"
+  ],
+  "author": "Sanatan, Shaktiraj, Yash, Ajay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sanatan-Shrivastava/ERP-CSP-201/issues"
+  },
+  "homepage": "https://github.com/Sanatan-Shrivastava/ERP-CSP-201#readme",
+  "dependencies": {
+    "pear": "^0.2.1"
+  }
+}

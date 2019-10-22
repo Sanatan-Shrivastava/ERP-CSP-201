@@ -104,6 +104,7 @@
                             <a class="has-arrow" href="all-students.html" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Registrations</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
                                 <li><a title="All Students" href="all-students.html"><span class="mini-sub-pro">Pre-Registration</span></a></li>
+                                <li><a title="Add Students" href="add-student.html"><span class="mini-sub-pro">Regular-Registration</span></a></li>
                             </ul>
                         </li>
                         <li>
@@ -117,6 +118,8 @@
                             <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Departments</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
                                 <li><a title="Departments List" href="departments.html"><span class="mini-sub-pro">Departments List</span></a></li>
+
+                                <li><a title="Edit Departments" href="edit-department.html"><span class="mini-sub-pro">Edit Departments</span></a></li> -->
                             </ul>
                         </li>
                         </li>
@@ -196,112 +199,3 @@
 
 
         <!-- <<<<<<<<<<<<<<<<<<<<<<==================================>>>>>>>>>>>>>>>>>>>> -->
-
-
-        <center><div class="alert-area mg-b-15">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="alert-wrap1 shadow-inner wrap-alert-b">
-                                <div class="alert-title">
-                                    <br>
-                                    <br>
-                                    <center><marquee><h1>Welcome to ERP Portal of Indian Institute of Information Technology Kota</h1></marquee></center> <br>
-                                    <img width="50%" src="img/logoIIITKOTA.png"> <br> <br> <br> <br> <br> <br> <br> <br>
-                                    <p>To view your profile: <u><a href="profile.html">click here</a></u></p>
-                                    <p>To go to IIITK's website <u><a href="http://www.iiitkota.ac.in">click here</a></u></p>
-                                    <p>To contact support staff: <u><a href="contact.html">click here</a></u></p>
-                                    <p>Mail us at <u><a href="mailto:'2018kucp1096@iiitkota.ac.in'">erpiiitkota@iiitkota.ac.in</a></u></p>
-
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <marquee>Note: To check for committee meeting's schedule, contact DUGC Convener</marquee>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div></center>
-       
-           
-        <div class="footer-copyright-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="footer-copy-right">
-                            <p>Copyright © 2019. All rights reserved. ERP managed and maintained by ERP-CSP-201.</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- jquery
-		============================================ -->
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <!-- bootstrap JS
-		============================================ -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- wow JS
-		============================================ -->
-    <script src="js/wow.min.js"></script>
-    <!-- price-slider JS
-		============================================ -->
-    <script src="js/jquery-price-slider.js"></script>
-    <!-- meanmenu JS
-		============================================ -->
-    <script src="js/jquery.meanmenu.js"></script>
-    <!-- owl.carousel JS
-		============================================ -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- sticky JS
-		============================================ -->
-    <script src="js/jquery.sticky.js"></script>
-    <!-- scrollUp JS
-		============================================ -->
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <!-- counterup JS
-		============================================ -->
-    <script src="js/counterup/jquery.counterup.min.js"></script>
-    <script src="js/counterup/waypoints.min.js"></script>
-    <script src="js/counterup/counterup-active.js"></script>
-    <!-- mCustomScrollbar JS
-		============================================ -->
-    <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/scrollbar/mCustomScrollbar-active.js"></script>
-    <!-- metisMenu JS
-		============================================ -->
-    <script src="js/metisMenu/metisMenu.min.js"></script>
-    <script src="js/metisMenu/metisMenu-active.js"></script>
-    <!-- morrisjs JS
-		============================================ -->
-    <script src="js/morrisjs/raphael-min.js"></script>
-    <script src="js/morrisjs/morris.js"></script>
-    <script src="js/morrisjs/morris-active.js"></script>
-    <!-- morrisjs JS
-		============================================ -->
-    <script src="js/sparkline/jquery.sparkline.min.js"></script>
-    <script src="js/sparkline/jquery.charts-sparkline.js"></script>
-    <script src="js/sparkline/sparkline-active.js"></script>
-    <!-- calendar JS
-		============================================ -->
-    <script src="js/calendar/moment.min.js"></script>
-    <script src="js/calendar/fullcalendar.min.js"></script>
-    <script src="js/calendar/fullcalendar-active.js"></script>
-    <!-- plugins JS
-		============================================ -->
-    <script src="js/plugins.js"></script>
-    <!-- main JS
-		============================================ -->
-    <script src="js/main.js"></script>
-    <!-- tawk chat JS
-		============================================ -->
-    <script src="js/tawk-chat.js"></script>
-</body>
-
-</html>
