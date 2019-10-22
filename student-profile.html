@@ -1,3 +1,22 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "students";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT * FROM students_details WHERE id='2018kucp1092'";
+$result = $conn->query($sql);
+
+$details = $result->fetch_assoc();
+?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -1338,55 +1357,55 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                                     <div class="address-hr">
-                                        <p><b>Name</b><br /> Fly Zend</p>
+                                        <p><b>Name</b><br /> <?php echo $details["name"]?></p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                                     <div class="address-hr tb-sm-res-d-n dps-tb-ntn">
-                                        <p><b>Id</b><br /> 2018KUCP1087</p>
+                                        <p><b>Id</b><br /> <?php echo $details["id"]?></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                                     <div class="address-hr">
-                                        <p><b>Email ID</b><br /> fly@gmail.com</p>
+                                        <p><b>Email ID</b><br /> <?php echo $details["email"]?></p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                                     <div class="address-hr tb-sm-res-d-n dps-tb-ntn">
-                                        <p><b>Phone</b><br /> +01962067309</p>
+                                        <p><b>Phone</b><br /> <?php echo $details["phone"]?></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                                     <div class="address-hr">
-                                        <p><b>Department</b><br /> CSE</p>
+                                        <p><b>Department</b><br /> <?php echo $details["department"]?></p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                                     <div class="address-hr tb-sm-res-d-n dps-tb-ntn">
-                                        <p><b>Birth Date</b><br /> 19-10-1998</p>
+                                        <p><b>Birth Date</b><br /> <?php echo $details["dob"]?></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                                     <div class="address-hr">
-                                        <p><b>Gender</b><br /> Female</p>
+                                        <p><b>Gender</b><br /> <?php echo $details["gender"]?></p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
                                     <div class="address-hr tb-sm-res-d-n dps-tb-ntn">
-                                        <p><b>Day Scholar/ Hosteller</b><br /> Hosteller</p>
+                                        <p><b>Day Scholar/ Hosteller</b><br /> <?php echo $details["category"]?></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="address-hr">
-                                        <p><b>Address</b><br /> E104, catn-2, Chandlodia Ahmedabad Gujarat, UK.</p>
+                                        <p><b>Address</b><br /> <?php echo $details["address"]?></p>
                                     </div>
                                 </div>
                             </div>
