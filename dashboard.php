@@ -1,3 +1,13 @@
+<?php
+// We need to use sessions, so you should always start sessions using the below code.
+session_start();
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+  header('Location: index.html');
+  exit();
+}
+?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -84,7 +94,7 @@
 								   <span class="mini-click-non">Profile</span>
 								</a>
                             <ul class="submenu-angle" aria-expanded="true">
-                                <li><a title="Dashboard v.1" href="student-profile.html"><span class="mini-sub-pro">Student Profile</span></a></li>
+                                <li><a title="Dashboard v.1" href="student-profile.php"><span class="mini-sub-pro">Student Profile</span></a></li>
                                 <li><a title="Dashboard v.2" href="view.html"><span class="mini-sub-pro">View</span></a></li>
                                 <li><a title="Dashboard v.3" href="update-profile.html"><span class="mini-sub-pro">Update Profile</span></a></li>
                                 <li><a title="Analytics" href="internships.html"><span class="mini-sub-pro">Internships</span></a></li>
@@ -140,7 +150,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="logo-pro">
-                        <a href="index.html"><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
+                        <a href="dashboard.php"><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -178,7 +188,7 @@
                                             <ul class="nav navbar-nav mai-top-nav header-right-menu">
                                                 <li class="nav-item">
                                                     <a href="#" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-															<span class="admin-name">LogOut</span>
+															<span><a href="logout.php" class="admin-name">LogOut</a></span>
 														</a>
 
                                                 </li>
