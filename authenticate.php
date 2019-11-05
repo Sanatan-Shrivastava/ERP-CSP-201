@@ -3,8 +3,8 @@ session_start();
 // Change this to your connection info.
 $DATABASE_HOST = 'localhost';
 $DATABASE_USER = 'root';
-$DATABASE_PASS = 'erpiiitk@2018';
-$DATABASE_NAME = 'phplogin';
+$DATABASE_PASS = '';
+$DATABASE_NAME = 'students';
 // Try and connect using the info above.
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if ( mysqli_connect_errno() ) {
@@ -21,12 +21,12 @@ if ( !isset($_POST['username'], $_POST['password']) ) {
 }
 
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?')) {
+if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE id = ?')) {
     // Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
     $stmt->bind_param('s', $_POST['username']);
     $stmt->execute();
     // Store the result so we can check if the account exists in the database.
-    $stmt->store_result(); }
+    $stmt->store_result();  }
     if ($stmt->num_rows > 0) {
         $stmt->bind_result($id, $password);
         $stmt->fetch();
@@ -37,9 +37,8 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
             // Create sessions so we know the user is logged in, they basically act like cookies but remember the data on the server.
             session_regenerate_id();
             $_SESSION['loggedin'] = TRUE;
-            $_SESSION['name'] = $_POST['username'];
             $_SESSION['id'] = $id;
-            header('Location: dashboard.php');
+            header('Location: dashboard.php?'.$_SESSION['id']);
         } else {
             echo 'Incorrect password!';
         }

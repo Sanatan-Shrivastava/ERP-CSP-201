@@ -201,7 +201,7 @@ if (!isset($_SESSION['loggedin'])) {
                         </div>
                     </div>
                 </div>
-            </div
+            </div>
         </div>
 
 
