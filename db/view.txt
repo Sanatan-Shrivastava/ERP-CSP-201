@@ -1,0 +1,22 @@
+gen_info
+CREATE TABLE `students`.`gen_info` ( `id` VARCHAR(50) NOT NULL , `name` VARCHAR(50) NOT NULL , `email` VARCHAR(50) NOT NULL , `a_email` VARCHAR(50) NOT NULL , `mobile` VARCHAR(40) NOT NULL , `martial_status` VARCHAR(20) NOT NULL , `aadhar` VARCHAR(30) NOT NULL , `blood_group` VARCHAR(10) NOT NULL ) ENGINE = InnoDB;
+ALTER TABLE `gen_info` ADD PRIMARY KEY( `id`);
+INSERT INTO `gen_info` (`id`, `name`, `email`, `a_email`, `mobile`, `martial_status`, `aadhar`, `blood_group`) VALUES ('2018kucp1092', 'Shaktiraj Daudra', '2018kucp1092@gmail.com', 'shaktirajdaudra@gmail.com', '7359802004', 'Single', '1111222233334444', 'A+');
+
+
+bank_info
+CREATE TABLE `students`.`bank_info` ( `id` VARCHAR(50) NOT NULL , `ac_no` VARCHAR(50) NOT NULL , `ac_name` VARCHAR(100) NOT NULL , `ifsc` VARCHAR(50) NOT NULL ) ENGINE = InnoDB;
+ALTER TABLE `bank_info` ADD PRIMARY KEY( `id`);
+ALTER TABLE `bank_info` CHANGE `ac_name` `bank_name` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL;
+INSERT INTO `bank_info` (`id`, `ac_no`, `bank_name`, `ifsc`) VALUES ('2018kucp1092', '111122223333', 'State Bank of India', 'SBI0XXXXXX');
+
+address_info
+CREATE TABLE `students`.`address_info` ( `id` VARCHAR(40) NOT NULL , `p_address` VARCHAR(100) NOT NULL , `p_city` VARCHAR(40) NOT NULL , `p_state` VARCHAR(40) NOT NULL , `p_zipcode` INT(10) NOT NULL , `c_address` VARCHAR(100) NOT NULL , `c_city` VARCHAR(40) NOT NULL , `c_state` VARCHAR(40) NOT NULL , `c_zipcode` INT(10) NOT NULL ) ENGINE = InnoDB;
+ALTER TABLE `address_info` ADD PRIMARY KEY( `id`);
+INSERT INTO `address_info` (`id`, `p_address`, `p_city`, `p_state`, `p_zipcode`, `c_address`, `c_city`, `c_state`, `c_zipcode`) VALUES ('2018kucp1092', 'Govind Nagar', 'Jamnagar', 'Gujarat', '111222', 'Caitanya Nagar', 'Jaipur', 'Rajasthan', '333444');
+
+
+misc_info
+CREATE TABLE `students`.`misc_info` ( `id` VARCHAR(50) NOT NULL , `section` VARCHAR(10) NOT NULL , `father_name` VARCHAR(80) NOT NULL , `mother_name` VARCHAR(80) NOT NULL , `dob` DATE NOT NULL , `dept` VARCHAR(20) NOT NULL , `category` VARCHAR(20) NOT NULL , `status` VARCHAR(20) NOT NULL , `stay` VARCHAR(50) NOT NULL ) ENGINE = InnoDB;
+ALTER TABLE `misc_info` ADD PRIMARY KEY( `id`);
+INSERT INTO `misc_info` (`id`, `section`, `father_name`, `mother_name`, `dob`, `dept`, `category`, `status`, `stay`) VALUES ('2018kucp1092', 'A3', 'Nilesh Daudra', 'Meera Daudra', '2000-04-01', 'CSE', 'General', 'Active', 'Hosteller');

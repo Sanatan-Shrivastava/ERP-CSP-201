@@ -1,3 +1,34 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "students";
+
+session_start();
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT * FROM gen_info WHERE id='".$_SESSION['id']."'";
+$result = $conn->query($sql);
+$gen = $result->fetch_assoc();
+
+$sql = "SELECT * FROM bank_info WHERE id='".$_SESSION['id']."'";
+$result = $conn->query($sql);
+$bank = $result->fetch_assoc();
+
+$sql = "SELECT * FROM address_info WHERE id='".$_SESSION['id']."'";
+$result = $conn->query($sql);
+$address = $result->fetch_assoc();
+
+$sql = "SELECT * FROM misc_info WHERE id='".$_SESSION['id']."'";
+$result = $conn->query($sql);
+$misc = $result->fetch_assoc();
+
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -1334,43 +1365,43 @@
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Name</h3>
-                                    <p>Shaktiraj Daudra</p>
+                                    <p><?php echo $gen["name"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Email</h3>
-                                    <p>xyz@gmia;.com</p>
+                                    <p><?php echo $gen["email"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Alternate Email</h3>
-                                    <p>lll.dssdf.sdf.</p>
+                                    <p><?php echo $gen["a_email"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Mobile</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $gen["mobile"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Martial Status</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $gen["martial_status"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Aadhar Number</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $gen["aadhar"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Blood Group</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $gen["blood_group"]?></p>
                                 </div>
                             </div>
                             <center><hr width="50%"></center>
@@ -1380,25 +1411,25 @@
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Address</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $address["p_address"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>City</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $address["p_city"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
-                                    <h3>Country</h3>
-                                    <p>Awesome Pro</p>
+                                    <h3>State</h3>
+                                    <p><?php echo $address["p_state"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>ZIP Code</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $address["p_zipcode"]?></p>
                                 </div>
                             </div>
                             <center><hr width="50%"></center>
@@ -1408,25 +1439,25 @@
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Address</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $address["c_address"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>City</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $address["c_city"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
-                                    <h3>Country</h3>
-                                    <p>Awesome Pro</p>
+                                    <h3>State</h3>
+                                    <p><?php echo $address["c_state"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>ZIP Code</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $address["c_zipcode"]?></p>
                                 </div>
                             </div>
                             <center><hr width="50%"></center>
@@ -1436,19 +1467,19 @@
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Bank Account No.</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $bank["ac_no"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Bank Name</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $bank["bank_name"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>IFSC Code</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $bank["ifsc"]?></p>
                                 </div>
                             </div>
                         </div>
@@ -1460,74 +1491,56 @@
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
-                                    <h3>Degree</h3>
-                                    <p>Shaktiraj Daudra</p>
-                                </div>
-                            </div>
-                            <div class="single-review-st-text">
-                                <div class="review-ctn-hf">
-                                    <h3>User ID</h3>
-                                    <p>xyz@gmia;.com/p>
+                                    <h3>College ID</h3>
+                                    <p><?php echo $misc["id"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Section</h3>
-                                    <p>lll.dssdf.sdf.</p>
+                                    <p><?php echo $misc["section"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Father Name</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $misc["father_name"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Mother Name</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $misc["mother_name"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>DOB</h3>
-                                    <p>Awesome Pro</p>
-                                </div>
-                            </div>
-                            <div class="single-review-st-text">
-                                <div class="review-ctn-hf">
-                                    <h3>Admission Type</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $misc["dob"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Department</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $misc["dept"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Category</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $misc["category"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
                                     <h3>Status</h3>
-                                    <p>Awesome Pro</p>
+                                    <p><?php echo $misc["status"]?></p>
                                 </div>
                             </div>
                             <div class="single-review-st-text">
                                 <div class="review-ctn-hf">
-                                    <h3>Student Type</h3>
-                                    <p>Awesome Pro</p>
-                                </div>
-                            </div>
-                            <div class="single-review-st-text">
-                                <div class="review-ctn-hf">
-                                    <h3>Day Scholar Hosteller</h3>
-                                    <p>Awesome Pro</p>
+                                    <h3>Day Scholar/Hosteller</h3>
+                                    <p><?php echo $misc["stay"]?></p>
                                 </div>
                             </div>
                         </div>
