@@ -20,3 +20,13 @@ misc_info
 CREATE TABLE `students`.`misc_info` ( `id` VARCHAR(50) NOT NULL , `section` VARCHAR(10) NOT NULL , `father_name` VARCHAR(80) NOT NULL , `mother_name` VARCHAR(80) NOT NULL , `dob` DATE NOT NULL , `dept` VARCHAR(20) NOT NULL , `category` VARCHAR(20) NOT NULL , `status` VARCHAR(20) NOT NULL , `stay` VARCHAR(50) NOT NULL ) ENGINE = InnoDB;
 ALTER TABLE `misc_info` ADD PRIMARY KEY( `id`);
 INSERT INTO `misc_info` (`id`, `section`, `father_name`, `mother_name`, `dob`, `dept`, `category`, `status`, `stay`) VALUES ('2018kucp1092', 'A3', 'Nilesh Daudra', 'Meera Daudra', '2000-04-01', 'CSE', 'General', 'Active', 'Hosteller');
+
+internship
+CREATE TABLE `students`.`internship` ( `id` VARCHAR(50) NOT NULL , `company` VARCHAR(100) NOT NULL , `location` VARCHAR(50) NOT NULL , `duration` VARCHAR(40) NOT NULL , `projects` VARCHAR(200) NOT NULL , `year` INT(10) NOT NULL ) ENGINE = InnoDB;
+INSERT INTO `internship` (`id`, `company`, `location`, `duration`, `projects`, `year`) VALUES ('2018kucp1092', 'Amazon', 'Delhi', '12 Weeks', 'Student ERP', '2019');
+INSERT INTO `internship` (`id`, `company`, `location`, `duration`, `projects`, `year`) VALUES ('2018kucp1092', 'Google', 'Mumbai', '12 Weeks', 'Face and Emotion Recogniser Application', '2018');
+
+achievement
+CREATE TABLE `students`.`skills` ( `id` VARCHAR(40) NOT NULL , `achment` VARCHAR(200) NOT NULL , `month` VARCHAR(50) NOT NULL ) ENGINE = InnoDB;
+INSERT INTO `achievement` (`id`, `achment`, `month`) VALUES ('2018kucp1092', 'Build Website for Flair Fiesta', 'March 2019'), ('2018kucp1092', 'Host GCP tools Workshop in Google Cloud Jam', 'August 2019');
+INSERT INTO `achievement` (`id`, `achment`, `month`) VALUES ('2018kucp1087', '1st Position Holder in Doubles Badminton (KHEL)', 'November 2019'), ('2018kucp1088', 'Attended Machine Learning Workshop by NVIDIA', 'September 2019');

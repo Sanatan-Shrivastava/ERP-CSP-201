@@ -12,10 +12,10 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT * FROM students_details WHERE id='".$_SESSION['id']."'";
+$sql = "SELECT * FROM internship WHERE id='".$_SESSION['id']."'";
 $result = $conn->query($sql);
 
-$details = $result->fetch_assoc();
+
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -355,23 +355,35 @@ $details = $result->fetch_assoc();
         <div class="widget-program-box mt-t-30 mg-b-15" style="margin-top:-15px;">
             <div class="container-fluid">
                 <div class="row">
-                    <!-- ---------------- -->
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="margin-top:15px;" >
-                        <div class="hpanel widget-int-shape responsive-mg-b-30">
-                            <div class="panel-body">
-                                <div class="text-center content-box">
-                                    <h2 class="m-b-xs">Google</h2>
-                                    <p class="font-bold text-success"><i class="fa fa-map-marker"></i> Hyderabad</p>
-                                    <p class="small mg-t-box"><strong>Duration: </strong> 8 Weeks</p>
-                                    <p class="small mg-t-box"><strong>Projects: </strong> Google Action Creator, ERP Database</p>
-                                    <p class="small mg-t-box"><strong>Year: </strong> 2018</p>
-                                    <!-- <button class="btn btn-success widget-btn-1 btn-sm">Action button</button> -->
+
+
+                <?php
+                    $i = 1;
+                    while($i <= $result->num_rows){
+                        $data = $result->fetch_assoc();
+                        echo '
+                        <!-- ---------------- -->
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="margin-top:15px;" >
+                            <div class="hpanel widget-int-shape responsive-mg-b-30">
+                                <div style="height:200px;" class="panel-body">
+                                    <div style="margin-top:20px;" class="text-center content-box">
+                                        <h2 class="m-b-xs">'.$data["company"].'</h2>
+                                        <p class="font-bold text-success"><i class="fa fa-map-marker"></i> '.$data["location"].'</p>
+                                        <p class="small mg-t-box" style="margin-bottom:-15px;"><strong>Duration: </strong> '.$data["duration"].'</p>
+                                        <p class="small mg-t-box" style="margin-bottom:-15px;"><strong>Projects: </strong> '.$data["projects"].'</p>
+                                        <p class="small mg-t-box" style="margin-bottom:-15px;"><strong>Year: </strong> '.$data["year"].'</p>
+                                        <!-- <button class="btn btn-success widget-btn-1 btn-sm">Action button</button> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- -------------- -->
-                    
+                        <!-- -------------- -->';
+                        $i = $i + 1;
+                    }
+                ?>    
+
+
+
                 </div>
             </div>
         </div>  

@@ -12,10 +12,10 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT * FROM students_details WHERE id='".$_SESSION['id']."'";
+$sql = "SELECT * FROM achievement WHERE id='".$_SESSION['id']."'";
 $result = $conn->query($sql);
 
-$details = $result->fetch_assoc();
+
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -354,6 +354,11 @@ $details = $result->fetch_assoc();
         <div class="all-content-wrapper">
         <div class="widget-program-box mt-t-30 mg-b-15" style="margin-top:-15px;">
             <div class="container-fluid">
+            <?php
+                    $i = 1;
+                    while($i <= $result->num_rows){
+                        $data = $result->fetch_assoc();
+                        echo '
                 <!-- ------------------------------------------------- -->
                 <div class="row">
                     <!-- ---------------- -->
@@ -362,8 +367,8 @@ $details = $result->fetch_assoc();
                         <div class="hpanel widget-int-shape responsive-mg-b-30">
                             <div class="panel-body">
                                 <div class="text-center content-box">
-                                    <h2 class="m-b-xs">3rd Position Holder in Badminton</h2>
-                                    <p style="margin-bottom:-15px;">Jun 2018</p>
+                                    <h2 class="m-b-xs">'.$data["achment"].'</h2>
+                                    <p style="margin-bottom:-15px;">'.$data["month"].'</p>
                                 </div>
                             </div>
                         </div>
@@ -371,7 +376,10 @@ $details = $result->fetch_assoc();
                     <div class="col-lg-1 col-md-6 col-sm-6 col-xs-12" style="margin-top:15px;" ></div>
                     <!-- -------------- -->
                 </div>
-                <!-- ---------------------------------------------------- -->
+                <!-- ---------------------------------------------------- -->';
+                $i = $i + 1;
+            }
+        ?>    
             </div>
         </div>  
         </div>
