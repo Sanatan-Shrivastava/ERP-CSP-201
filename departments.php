@@ -549,24 +549,25 @@ else{
                 <th>Email</th>
                 <th>No. of Students</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>Computer Science and Engineering</td>
-                <td>
-                Basant Agarwal
-                </td>
-                <td>basant.cse@iiitkota.ac.in</td>
-                <td>330</td>
-            </tr>
-            <tr>
-                    <td>2</td>
-                    <td>Electronics and Communication Engineering</td>
-                    <td>
-                    Parikshit K. Singh
-                    </td>
-                    <td>parikshit@iiitkota.ac.in</td>
-                    <td>330</td>
-                </tr>
+            <?php
+        
+        $query="select * from Professor";
+        $result = mysqli_query($con ,$query);
+        while($data=mysqli_fetch_assoc($result)){
+
+            echo "<tr>
+            <td> " . $data['Name'] . "  </td>
+            <td> "   . $data['Branch'] . "</td>
+            <td>" . $data['Email'] . "</td>
+            <td> " . $data['Contact'] . "</td>
+            <td> " . $data['Specialization'] . " </td>   
+        </tr>"; 
+        }
+        if(!$result){
+            echo "query failed";
+        }
+        
+        ?>
             </table>
             </div>
             </div>
@@ -584,6 +585,10 @@ else{
                 </div>
             </div>
         </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
 
     <!-- jquery
