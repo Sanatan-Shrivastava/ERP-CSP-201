@@ -18,7 +18,7 @@ else{
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Departments</title>
+    <title>Departments | Kiaalap - Kiaalap Admin Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -106,12 +106,12 @@ else{
                         </ul>
                     </li>
                     <li>
-                        <a title="Landing Page" href="events.php" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Events</span></a>
+                        <a title="Landing Page" href="events.html" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Event</span></a>
                     </li>
                     <li>
                         <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Professors</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
-                            <li><a title="All Professors" href="all-professors.php"><span class="mini-sub-pro">All Professors</span></a></li>
+                            <li><a title="All Professors" href="all-professors.html"><span class="mini-sub-pro">All Professors</span></a></li>
                         </ul>
                     </li>
                     <li>
@@ -124,7 +124,7 @@ else{
                     <li>
                         <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Courses</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
-                            <li><a title="All Courses" href="all-courses.php"><span class="mini-sub-pro">All Courses</span></a></li>
+                            <li><a title="All Courses" href="all-courses.html"><span class="mini-sub-pro">All Courses</span></a></li>
                             <li><a title="Courses Profile" href="course-info.html"><span class="mini-sub-pro">Courses Info</span></a></li>
                         </ul>
                     </li>
@@ -394,17 +394,6 @@ else{
                     </div>
                 </div>
                 <!-- Mobile Menu end -->
-<<<<<<< HEAD
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="breadcome-list single-page-breadcome">
-                            <div class="row">
-                                <h1 style="margin-left: 020px">Departments List</h1>
-                            </div>
-                        </div>
-                    </div>
-           
-        </div>
-=======
                 <div class="breadcome-area">
                     <div class="container-fluid">
                         <div class="row">
@@ -418,7 +407,6 @@ else{
                         </div>
                     </div>
                 </div>
->>>>>>> 21e9e2de8fb6aaca8b7d4c9bcf4eebac0f787fd0
         <!--<div class="product-status mg-b-15">
             <div class="container-fluid">
                 <div class="row">
@@ -561,24 +549,25 @@ else{
                 <th>Email</th>
                 <th>No. of Students</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>Computer Science and Engineering</td>
-                <td>
-                Basant Agarwal
-                </td>
-                <td>basant.cse@iiitkota.ac.in</td>
-                <td>330</td>
-            </tr>
-            <tr>
-                    <td>2</td>
-                    <td>Electronics and Communication Engineering</td>
-                    <td>
-                    Parikshit K. Singh
-                    </td>
-                    <td>parikshit@iiitkota.ac.in</td>
-                    <td>330</td>
-                </tr>
+            <?php
+        
+        $query="select * from Professor";
+        $result = mysqli_query($con ,$query);
+        while($data=mysqli_fetch_assoc($result)){
+
+            echo "<tr>
+            <td> " . $data['Name'] . "  </td>
+            <td> "   . $data['Branch'] . "</td>
+            <td>" . $data['Email'] . "</td>
+            <td> " . $data['Contact'] . "</td>
+            <td> " . $data['Specialization'] . " </td>   
+        </tr>"; 
+        }
+        if(!$result){
+            echo "query failed";
+        }
+        
+        ?>
             </table>
             </div>
             </div>
@@ -596,6 +585,10 @@ else{
                 </div>
             </div>
         </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
 
     <!-- jquery
