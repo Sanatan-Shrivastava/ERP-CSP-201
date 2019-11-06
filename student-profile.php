@@ -23,7 +23,7 @@ $details = $result->fetch_assoc();
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Student Profile | Kiaalap - Kiaalap Admin Template</title>
+    <title>Student Profile</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -157,7 +157,7 @@ $details = $result->fetch_assoc();
                                     class="educate-icon educate-course icon-wrap"></span> <span
                                     class="mini-click-non">Courses</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Courses" href="all-courses.html"><span class="mini-sub-pro">All
+                                <li><a title="All Courses" href="all-courses.php"><span class="mini-sub-pro">All
                                             Courses</span></a></li>
                                 <!-- <li><a title="Add Courses" href="add-course.html"><span class="mini-sub-pro">Add Course</span></a></li> -->
                                 <!-- <li><a title="Edit Courses" href="edit-course.html"><span class="mini-sub-pro">Edit Course</span></a></li> -->
