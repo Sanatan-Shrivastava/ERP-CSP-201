@@ -4,72 +4,72 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>All Courses</title>
+    <title>IIITK|ERP-CSP201|CALENDAR</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
-		============================================ -->
+        ============================================ -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <!-- Google Fonts
-		============================================ -->
+        ============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
     <!-- Bootstrap CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Bootstrap CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- owl.carousel CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.css">
     <link rel="stylesheet" href="css/owl.transitions.css">
     <!-- animate CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- normalize CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- meanmenu icon CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/meanmenu.min.css">
     <!-- main CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/main.css">
     <!-- educate icon CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/educate-custon-icon.css">
     <!-- morrisjs CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/morrisjs/morris.css">
     <!-- mCustomScrollbar CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
     <!-- metisMenu CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/metisMenu/metisMenu.min.css">
     <link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css">
     <!-- calendar CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/calendar/fullcalendar.min.css">
     <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
     <!-- style CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="style.css">
     <!-- responsive CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- modernizr JS
-		============================================ -->
+        ============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
     <!--[if lt IE 8]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
-   <!-- Start Left menu area -->
-   <div class="left-sidebar-pro">
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+      <!-- Start Left menu area -->
+      <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
                 <a href="index.html"><img class="main-logo" src="img/logo/logoIIITK.svg" alt="" /></a>
@@ -113,7 +113,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a class="has-arrow" href="all-courses.php" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Courses</span></a>
+                            <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Courses</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
                                 <li><a title="All Courses" href="all-courses.php"><span class="mini-sub-pro">All Courses</span></a></li>
                                 <!-- <li><a title="Add Courses" href="add-course.html"><span class="mini-sub-pro">Add Course</span></a></li> -->
@@ -131,7 +131,7 @@
                             </ul>
                         </li> -->
                         <li>
-                            <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Departments</span></a>
+                            <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-department icon-wrap"></span> <span class="mini-click-non">Departments</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
                                 <li><a title="Departments List" href="departments.html"><span class="mini-sub-pro">Departments List</span></a></li>
                                 <!-- <li><a title="Add Departments" href="add-department.html"><span class="mini-sub-pro">Add Departments</span></a></li>
@@ -215,6 +215,8 @@
         </nav>
     </div>
     <!-- End Left menu area -->
+
+    
     <!-- Start Welcome area -->
     <div class="all-content-wrapper">
         <div class="container-fluid">
@@ -243,9 +245,9 @@
                                     <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
                                         <div class="header-top-menu tabl-d-n">
                                             <ul class="nav navbar-nav mai-top-nav">
-                                                <li class="nav-item"><a href="dashboard.html" class="nav-link">Home</a>
+                                                <li class="nav-item"><a href="#" class="nav-link">Home</a>
                                                 </li>
-                                                <li class="nav-item"><a href="about.html" class="nav-link">About</a>
+                                                <li class="nav-item"><a href="#" class="nav-link">About</a>
                                                 </li>
                                                 <li class="nav-item"><a href="#" class="nav-link">Services</a>
                                                 </li>
@@ -253,8 +255,8 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                  </div>
-                                  <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                                         <div class="header-right-info">
                                             <ul class="nav navbar-nav mai-top-nav header-right-menu">
                                                 <li class="nav-item">
@@ -270,7 +272,7 @@
                         </div>
                     </div>
                 </div>
-            </div>                           
+            </div>
             <!-- Mobile Menu start -->
             <div class="mobile-menu-area">
                 <div class="container">
@@ -314,7 +316,7 @@
                                             </ul>
                                         </li>
                                         <li><a data-toggle="collapse" data-target="#democrou" href="#">Courses <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <!-- <ul id="democrou" class="collapse dropdown-header-top">
+                                            <ul id="democrou" class="collapse dropdown-header-top">
                                                 <li><a href="all-courses.html">All Courses</a>
                                                 </li>
                                                 <li><a href="add-course.html">Add Course</a>
@@ -325,7 +327,7 @@
                                                 </li>
                                                 <li><a href="course-payment.html">Courses Payment</a>
                                                 </li>
-                                            </ul> -->
+                                            </ul>
                                         </li>
                                         <li><a data-toggle="collapse" data-target="#demolibra" href="#">Library <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                             <ul id="demolibra" class="collapse dropdown-header-top">
@@ -347,8 +349,8 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li><a data-toggle="collapse" data-target="#demomi" href="#">Mailbox <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="demomi" class="collapse dropdown-header-top">
+                                        <li><a data-toggle="collapse" data-target="#demo" href="#">Mailbox <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                            <ul id="demo" class="collapse dropdown-header-top">
                                                 <li><a href="mailbox.html">Inbox</a>
                                                 </li>
                                                 <li><a href="mailbox-view.html">View Mail</a>
@@ -457,58 +459,67 @@
                 </div>
             </div>
             <!-- Mobile Menu end -->
-     </div>
-     <div class="product-status mg-b-15">
-            <div class="container-fluid">
-                    <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="product-status-wrap drp-lst">
-            <table>
-            <tr>
-                <th>Sr. No.</th>
-                <th>Course Name</th>
-                <th>Semester</th>
-                <th>Course Instructor</th>
-                <th>No. of Students</th>
-            </tr>
-        <?php
-            $con=mysqli_connect('localhost','root','','Login');
-            
-            if(!$con){
-            
-                echo "Connection failed";
-            }
-
-        $query="select * from courses";
-        $result = mysqli_query($con ,$query);
-        while($data=mysqli_fetch_assoc($result)){
-
-            echo "<tr>
-            <td> " . $data['Sr. No.'] . "  </td>
-            <td> "   . $data['Course Code'] . "</td>
-            <td> "   . $data['Course Name'] . "</td>
-            <td>" . $data['Semester'] . "</td>
-            <td> " . $data['Course Instructor'] . "</td>
-        </tr>"; 
-        }
-        if(!$result){
-            echo "query failed";
-        }
-        ?>
-            </table>
-            </div>
-            </div>
-            </div>
-            </div>
         </div>
-    </div>
-    
-       <div class="footer-copyright-area">
+                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="breadcome-list single-page-breadcome">
+                                <div class="row">
+                                    <h1 style="margin-left: 020px">Events of Current Semester</h1>
+                                </div>
+                            </div>
+                        </div>
+            <!-- <img src="IIITK_Academic_Calendar_2019-20.jpg"></img> -->
+            <?php
+               $con=mysqli_connect('localhost','root','','login');
+                if(!$con){
+                   echo "Connection failed";
+                }
+                else{
+                }
+            ?>
+             
+             <?php
+        $query="select * from events";
+        $result = mysqli_query($con ,$query);
+        // echo $result->num_rows;
+        
+        ?>
+
+        <div class="contacts-area mg-b-15">
+            <div class="container-fluid" style="margin-bottom:130px;">
+                <div class="row">
+                    
+                    <?php 
+                        $i = 1;
+                        while($i <= $result->num_rows){
+                            $data=mysqli_fetch_assoc($result);
+                           echo '<div style="margin-top:20px;" class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
+                            <div class="panel-body custom-panel-jw">
+                                <img alt="logo" class="img-circle m-b" style="width: 45%;" src="data:image/jpeg;base64,' . base64_encode($data['Logo']) . '">
+                                <h3>'.$data['Event Date'].'</h3>
+                            </div>
+                            <div class="panel-footer contact-footer">
+                                <div class="professor-stds-int">
+                                    <span style="color: white;">
+                                        '.$data['Description'].'
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>';
+                    $i = $i + 1;
+                        }
+                    ?>
+            </div>
+
+
+
+        <div class="footer-copyright-area" style="margin-top:60px">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer-copy-right">
-                            <p>Copyright © 2019. All rights reserved. ERP managed and maintained by ERP-CSP-201.</a></p>
+                        <p>Copyright © 2019. All rights reserved. ERP managed and maintained by ERP-CSP-201.</a></p>
                         </div>
                     </div>
                 </div>
@@ -567,6 +578,6 @@
     <!-- tawk chat JS
 		============================================ -->
     <script src="js/tawk-chat.js"></script>
+</body>
 
-    </body>
-    </html>
+</html>

@@ -405,9 +405,6 @@ else{
                 <div class="row">
                     
                     
-                    
-                    
-                    
                     <?php 
                         $i = 1;
                         while($i <= $result->num_rows){
