@@ -5,10 +5,10 @@ $con=mysqli_connect('localhost','root','','ERP');
 
 if(!$con){
 
-    echo "Connection failed";
+
 }
 else{
-    echo "Connection succesful";
+
 }
 ?>
 
@@ -551,16 +551,16 @@ else{
             </tr>
             <?php
         
-        $query="select * from Professor";
+        $query="select * from Departments";
         $result = mysqli_query($con ,$query);
         while($data=mysqli_fetch_assoc($result)){
 
             echo "<tr>
-            <td> " . $data['Name'] . "  </td>
-            <td> "   . $data['Branch'] . "</td>
-            <td>" . $data['Email'] . "</td>
-            <td> " . $data['Contact'] . "</td>
-            <td> " . $data['Specialization'] . " </td>   
+            <td> " . $data['No'] . "  </td>
+            <td> "   . $data['Name of Dept.'] . "</td>
+            <td>" . $data['Head'] . "</td>
+            <td> " . $data['Email'] . "</td>
+            <td> " . $data['No. of Students'] . " </td>   
         </tr>"; 
         }
         if(!$result){
