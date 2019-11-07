@@ -118,16 +118,11 @@ $misc = $result->fetch_assoc();
                                 <span class="mini-click-non">Profile</span>
                             </a>
                             <ul class="submenu-angle" aria-expanded="true">
-                                <li><a title="Dashboard v.1" href="student-profile.html"><span
-                                            class="mini-sub-pro">Student Profile</span></a></li>
-                                <li><a title="Dashboard v.2" href="index-1.html"><span
-                                            class="mini-sub-pro">View</span></a></li>
-                                <li><a title="Dashboard v.3" href="update-profile.html"><span class="mini-sub-pro">Update
-                                            Profile</span></a></li>
-                                <li><a title="Analytics" href="analytics.html"><span
-                                            class="mini-sub-pro">Internships</span></a></li>
-                                <li><a title="Widgets" href="widgets.html"><span
-                                            class="mini-sub-pro">Achievements/Skills</span></a></li>
+                                <li><a title="Dashboard v.1" href="student-profile.php"><span class="mini-sub-pro">Student Profile</span></a></li>
+                                <li><a title="Dashboard v.2" href="view.php"><span class="mini-sub-pro">View</span></a></li>
+                                <li><a title="Dashboard v.3" href="update-profile.html"><span class="mini-sub-pro">Update Profile</span></a></li>
+                                <li><a title="Analytics" href="internships.php"><span class="mini-sub-pro">Internships</span></a></li>
+                                <li><a title="Widgets" href="skills.php"><span class="mini-sub-pro">Achievements/Skills</span></a></li>
                             </ul>
                         </li>
                         <li>
