@@ -26,15 +26,15 @@ INSERT INTO `internship` (`id`, `company`, `location`, `duration`, `projects`, `
 INSERT INTO `internship` (`id`, `company`, `location`, `duration`, `projects`, `year`) VALUES ('2018kucp1092', 'Google', 'Mumbai', '12 Weeks', 'Face and Emotion Recogniser Application', '2018');
 
 -- achievement
-CREATE TABLE `erp_iiitk`.`skills` ( `id` VARCHAR(40) NOT NULL , `achment` VARCHAR(200) NOT NULL , `month` VARCHAR(50) NOT NULL ) ENGINE = InnoDB;
+CREATE TABLE `erp_iiitk`.`achievement` ( `id` VARCHAR(40) NOT NULL , `achment` VARCHAR(200) NOT NULL , `month` VARCHAR(50) NOT NULL ) ENGINE = InnoDB;
 INSERT INTO `achievement` (`id`, `achment`, `month`) VALUES ('2018kucp1092', 'Build Website for Flair Fiesta', 'March 2019'), ('2018kucp1092', 'Host GCP tools Workshop in Google Cloud Jam', 'August 2019');
 INSERT INTO `achievement` (`id`, `achment`, `month`) VALUES ('2018kucp1087', '1st Position Holder in Doubles Badminton (KHEL)', 'November 2019'), ('2018kucp1088', 'Attended Machine Learning Workshop by NVIDIA', 'September 2019');
 
 -- accounts
 CREATE TABLE `erp_iiitk`.`accounts` ( `id` VARCHAR(100) NOT NULL , `password` VARCHAR(100) NOT NULL ) ENGINE = InnoDB;
 ALTER TABLE `accounts` ADD PRIMARY KEY( `id`);
-INSERT INTO `achievement` (`id`, `password`) VALUES ('2018kucp1092', 'shaktirajdaudra'), ('2018kucp1087', 'ajaysharma');
-INSERT INTO `achievement` (`id`, `password`) VALUES ('2018kucp1092', 'yashsingh');
+INSERT INTO `accounts` (`id`, `password`) VALUES ('2018kucp1092', 'shaktirajdaudra'), ('2018kucp1087', 'ajaysharma');
+INSERT INTO `accounts` (`id`, `password`) VALUES ('2018kucp1088', 'yashsingh');
 
 -- students_details
 CREATE TABLE `erp_iiitk`.`students_details` ( `id` VARCHAR(15) NOT NULL , `name` VARCHAR(50) NOT NULL , `email` VARCHAR(50) NOT NULL , `phone` VARCHAR(15) NOT NULL , `department` VARCHAR(50) NOT NULL , `dob` DATE NOT NULL , `gender` VARCHAR(10) NOT NULL , `category` VARCHAR(50) NOT NULL , `address` VARCHAR(300) NOT NULL , `img` MEDIUMBLOB NOT NULL ) ENGINE = InnoDB;

@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "students";
+$dbname = "erp_iiitk";
 
 session_start();
 // Create connection
