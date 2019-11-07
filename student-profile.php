@@ -356,7 +356,7 @@ $details = $result->fetch_assoc();
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> -->
                     <div class="profile-info-inner width40">
                         <div class="profile-img">
-                            <img src="img/profile/1.jpg" alt="" />
+                            <img style="height:300px; width: auto;" <?php echo 'src="data:image/jpeg;base64,' . base64_encode($details['img']) . '"'?> alt="" />
                         </div>
                         <div class="profile-details-hr">
                             <div class="row">
