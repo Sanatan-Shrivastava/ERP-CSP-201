@@ -68,7 +68,9 @@
     <!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
-    <div class="left-sidebar-pro">
+
+   <!-- Start Left Menu Area -->
+   <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
                 <a href="index.html"><img class="main-logo" src="img/logo/logoIIITK.svg" alt="" /></a>
@@ -83,34 +85,28 @@
                                 <span class="mini-click-non">Profile</span>
                             </a>
                             <ul class="submenu-angle" aria-expanded="true">
-                                <li><a title="Dashboard v.1" href="student-profile.html"><span class="mini-sub-pro">Student Profile</span></a></li>
-                                <li><a title="Dashboard v.2" href="view.html"><span class="mini-sub-pro">View</span></a></li>
+                                <li><a title="Dashboard v.1" href="student-profile.php"><span class="mini-sub-pro">Student Profile</span></a></li>
+                                <li><a title="Dashboard v.2" href="view.php"><span class="mini-sub-pro">View</span></a></li>
                                 <li><a title="Dashboard v.3" href="update-profile.html"><span class="mini-sub-pro">Update Profile</span></a></li>
-                                <li><a title="Analytics" href="internships.html"><span class="mini-sub-pro">Internships</span></a></li>
-                                <li><a title="Widgets" href="skills.html"><span class="mini-sub-pro">Achievements/Skills</span></a></li>
+                                <li><a title="Analytics" href="internships.php"><span class="mini-sub-pro">Internships</span></a></li>
+                                <li><a title="Widgets" href="skills.php"><span class="mini-sub-pro">Achievements/Skills</span></a></li>
                             </ul>
                         </li>
                         <li>
                             <a title="Landing Page" href="events.php" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Events</span></a>
                         </li>
                         <li>
-                            <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Professors</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Professors" href="all-professors.php"><span class="mini-sub-pro">All Professors</span></a></li>
-                            </ul>
+                            <a title="Landing Page" href="all-professors.php" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap sub-icon-mg" aria-hidden="true"></span><span class="mini-click-non">Professors</span></a>
                         </li>
                         <li>
-                            <a class="has-arrow" href="all-students.html" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Registrations</span></a>
+                            <a class="has-arrow" href="cource_reg.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Registrations</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
                                 <li><a title="All Students" href="all-courses.php"><span class="mini-sub-pro">Courses Info</span></a></li>
-                                <li><a title="Add Students" href="add-student.html"><span class="mini-sub-pro">Course Registration</span></a></li>
+                                <li><a title="Add Students" href="cource_reg.html"><span class="mini-sub-pro">Course Registration</span></a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Departments</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="Departments List" href="departments.html"><span class="mini-sub-pro">Departments List</span></a></li>
-                            </ul>
+                            <a title="Landing Page" href="departments.php" aria-expanded="false"><span class="educate-icon educate-course icon-wrap sub-icon-mg" aria-hidden="true"></span><span class="mini-click-non">Departments</span></a>
                         </li>
                         </li>
                         <li id="removable">
@@ -126,7 +122,7 @@
             </div>
         </nav>
     </div>
-    <!-- End Left menu area -->
+    <!-- End Left Menu Area -->
     <!-- Start Welcome area -->
     <div class="all-content-wrapper">
         <div class="container-fluid">
