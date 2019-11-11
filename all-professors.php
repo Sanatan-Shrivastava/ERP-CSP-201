@@ -17,7 +17,7 @@ else{
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>All Professor | Kiaalap - Kiaalap Admin Template</title>
+    <title>Professors</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -82,71 +82,58 @@ else{
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
         <!-- Start Left menu area -->
-<div class="left-sidebar-pro">
-    <nav id="sidebar" class="">
-        <div class="sidebar-header">
-            <a href="index.html"><img class="main-logo" src="img/logo/logoIIITK.svg" alt="" /></a>
-            <strong><a href="index.html"><img src="img/logo/logosn.png" alt="" /></a></strong>
-        </div>
-        <div class="left-custom-menu-adp-wrap comment-scrollbar">
-            <nav class="sidebar-nav left-sidebar-menu-pro">
-                <ul class="metismenu" id="menu1">
-                    <li class="active">
-                        <a class="has-arrow" href="index.html">
-                            <span class="educate-icon educate-home icon-wrap"></span>
-                            <span class="mini-click-non">Profile</span>
-                        </a>
-                        <ul class="submenu-angle" aria-expanded="true">
-                            <li><a title="Dashboard v.1" href="student-profile.html"><span class="mini-sub-pro">Student Profile</span></a></li>
-                            <li><a title="Dashboard v.2" href="view.html"><span class="mini-sub-pro">View</span></a></li>
-                            <li><a title="Dashboard v.3" href="update-profile.html"><span class="mini-sub-pro">Update Profile</span></a></li>
-                            <li><a title="Analytics" href="internships.html"><span class="mini-sub-pro">Internships</span></a></li>
-                            <li><a title="Widgets" href="skills.html"><span class="mini-sub-pro">Achievements/Skills</span></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a title="Landing Page" href="events.html" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Event</span></a>
-                    </li>
-                    <li>
-                        <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Professors</span></a>
-                        <ul class="submenu-angle" aria-expanded="false">
-                            <li><a title="All Professors" href="all-professors.html"><span class="mini-sub-pro">All Professors</span></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="has-arrow" href="all-students.html" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Registrations</span></a>
-                        <ul class="submenu-angle" aria-expanded="false">
-                            <li><a title="All Students" href="all-students.html"><span class="mini-sub-pro">Pre-Registration</span></a></li>
-                            <li><a title="Add Students" href="add-student.html"><span class="mini-sub-pro">Regular-Registration</span></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Courses</span></a>
-                        <ul class="submenu-angle" aria-expanded="false">
-                            <li><a title="All Courses" href="all-courses.html"><span class="mini-sub-pro">All Courses</span></a></li>
-                            <li><a title="Courses Profile" href="course-info.html"><span class="mini-sub-pro">Courses Info</span></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Departments</span></a>
-                        <ul class="submenu-angle" aria-expanded="false">
-                            <li><a title="Departments List" href="departments.html"><span class="mini-sub-pro">Departments List</span></a></li>
-                        </ul>
-                    </li>
-                    </li>
-                    <li id="removable">
-                        <a class="has-arrow" href="#" aria-expanded="false"><span class="educate-icon educate-pages icon-wrap"></span> <span class="mini-click-non">Payment</span></a>
-                        <ul class="submenu-angle page-mini-nb-dp" aria-expanded="false">
-                            <li><a title="Payment" href="payment.html"><span class="mini-sub-pro">Fees Payment</span></a></li>
-                            <li><a title="Password Recovery" href="password-recovery.html"><span class="mini-sub-pro">Password Recovery</span></a></li>
-                            <li><a title="500 Page" href="500.html"><span class="mini-sub-pro">Payment Receipt</span></a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </nav>
-</div>
+        <div class="left-sidebar-pro">
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <a href="index.html"><img class="main-logo" src="img/logo/logoIIITK.svg" alt="" /></a>
+                <strong><a href="index.html"><img src="img/logo/logosn.png" alt="" /></a></strong>
+            </div>
+            <div class="left-custom-menu-adp-wrap comment-scrollbar">
+                <nav class="sidebar-nav left-sidebar-menu-pro">
+                    <ul class="metismenu" id="menu1">
+                        <li class="active">
+                            <a class="has-arrow" href="index.html">
+                                <span class="educate-icon educate-home icon-wrap"></span>
+                                <span class="mini-click-non">Profile</span>
+                            </a>
+                            <ul class="submenu-angle" aria-expanded="true">
+                                <li><a title="Dashboard v.1" href="student-profile.php"><span class="mini-sub-pro">Student Profile</span></a></li>
+                                <li><a title="Dashboard v.2" href="view.php"><span class="mini-sub-pro">View</span></a></li>
+                                <li><a title="Dashboard v.3" href="update-profile.html"><span class="mini-sub-pro">Update Profile</span></a></li>
+                                <li><a title="Analytics" href="internships.php"><span class="mini-sub-pro">Internships</span></a></li>
+                                <li><a title="Widgets" href="skills.php"><span class="mini-sub-pro">Achievements/Skills</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a title="Landing Page" href="events.php" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Events</span></a>
+                        </li>
+                        <li>
+                            <a title="Landing Page" href="all-professors.php" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap sub-icon-mg" aria-hidden="true"></span><span class="mini-click-non">Professors</span></a>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="cource_reg.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Registrations</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="All Students" href="all-courses.php"><span class="mini-sub-pro">Courses Info</span></a></li>
+                                <li><a title="Add Students" href="cource_reg.html"><span class="mini-sub-pro">Course Registration</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a title="Landing Page" href="departments.php" aria-expanded="false"><span class="educate-icon educate-course icon-wrap sub-icon-mg" aria-hidden="true"></span><span class="mini-click-non">Departments</span></a>
+                        </li>
+                        </li>
+                        <li id="removable">
+                            <a class="has-arrow" href="#" aria-expanded="false"><span class="educate-icon educate-pages icon-wrap"></span> <span class="mini-click-non">Payment</span></a>
+                            <ul class="submenu-angle page-mini-nb-dp" aria-expanded="false">
+                                <li><a title="Payment" href="payment.html"><span class="mini-sub-pro">Fees Payment</span></a></li>
+                                <li><a title="Password Recovery" href="password-recovery.html"><span class="mini-sub-pro">Password Recovery</span></a></li>
+                                <li><a title="500 Page" href="500.html"><span class="mini-sub-pro">Payment Receipt</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </div>
 <!-- End Left menu area -->   <!-- Start Welcome area -->
         <!-- Start Welcome area -->
         <div class="all-content-wrapper">
@@ -445,246 +432,7 @@ else{
 
 
 
-                    <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
-                            <div class="panel-body custom-panel-jw">
-                                <img alt="logo" class="img-circle m-b" style="width: 45%;"
-                                    src="img/contact/parikshit.jpg">
-                                <h3><a href="http://www.iiitkota.ac.in/parikshit">Dr. Parikshit Kishor Singh</a></h3>
-                                <p class="all-pro-ad">Assistant Professor</p>
-                                <p>
-                                    Electronics Comm. and Engineering <br>
-                                    <strong>Email: </strong><a
-                                        href="mailto:parikshit@iiitkota.ac.in">parikshit@iiitkota.ac.in</a> <br>
-                                    <strong>Contact:</strong><a href="tel: +91-9549659156">+91-9549659156</a>
-                                </p>
-                            </div>
-                            <div class="panel-footer contact-footer">
-                                <div class="professor-stds-int">
-                                    <span style="color: white;">
-                                        Soft Computing, Optimization Techniques
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
-                            <div class="panel-body custom-panel-jw">
-                                <img alt="logo" class="img-circle m-b" style="width: 45%;"
-                                    src="img/contact/vinita.jpeg">
-                                <h3><a href="http://www.iiitkota.ac.in/Vinita">Dr. Vinita Tiwari</a></h3>
-                                <p class="all-pro-ad">Assistant Professor</p>
-                                <p>
-                                    Electronics Comm. and Engineering <br>
-                                    <strong>Email: </strong><a
-                                        href="mailto:vinita@iiitkota.ac.in">vinita@iiitkota.ac.in</a> <br>
-                                    <strong>Contact:</strong><a href="tel: +91-9549654678">+91-9549654678</a>
-                                </p>
-                            </div>
-                            <div class="panel-footer contact-footer">
-                                <div class="professor-stds-int">
-                                    <span style="color: white;">
-                                        Optical communication, Dispersion managed solitons
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
-                            <div class="panel-body custom-panel-jw">
-                                <img alt="logo" class="img-circle m-b" style="width: 45%;" src="img/contact/isha.jpg">
-                                <h3><a href="http://www.iiitkota.ac.in/isha">Dr. Isha Pathak Tripathi</a></h3>
-                                <p class="all-pro-ad">Assistant Professor</p>
-                                <p>
-                                    Computer Science and Engineering<br>
-                                    <strong>Email: </strong><a href="mailto:isha@iiitkota.ac.in">isha@iiitkota.ac.in</a>
-                                    <br>
-                                    <strong>Contact:</strong><a href="tel: +91-9549650267">+91-9549650267</a>
-                                </p>
-                            </div>
-                            <div class="panel-footer contact-footer">
-                                <div class="professor-stds-int">
-                                    <span style="color: white;">
-                                        Network Virtualization, Computer Networks, Mobile Computing
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
-                            <div class="panel-body custom-panel-jw">
-                                <img alt="logo" class="img-circle m-b" style="width: 45%;"
-                                    src="img/contact/priyankamishra.jpg">
-                                <h3><a href="http://www.iiitkota.ac.in/priyankamishra">Dr. Priyanka Mishra</a></h3>
-                                <p class="all-pro-ad">Assistant Professor</p>
-                                <p>
-                                    Computer Science and Engineering <br>
-                                    <strong>Email: </strong><a
-                                        href="mailto:priyanka.cse@iiitkota.ac.in">priyanka.cse@iiitkota.ac.in</a> <br>
-                                    <strong>Contact:</strong><a href="+91-9549650567">+91-9549650567</a>
-                                </p>
-                            </div>
-                            <div class="panel-footer contact-footer">
-                                <div class="professor-stds-int">
-                                    <span style="color: white;">
-                                        Recommender systems, Modeling evidence theory, trust and reputation computing,
-                                        SNA.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
-                            <div class="panel-body custom-panel-jw">
-                                <img alt="logo" class="img-circle m-b" style="width: 45%;" src="img/contact/basant.jpg">
-                                <h3><a href="http://www.iiitkota.ac.in/parikshit">Dr. Basant Agarwal</a></h3>
-                                <p class="all-pro-ad">Assistant Professor</p>
-                                <p>
-                                    Computer Science and Engineering <br>
-                                    <strong>Email: </strong><a
-                                        href="mailto:parikshit@iiitkota.ac.in">basant.cse@iiitkota.ac.in</a> <br>
-                                    <strong>Contact:</strong><a href="tel: +91-9549650345">+91-9549650345</a>
-                                </p>
-                            </div>
-                            <div class="panel-footer contact-footer">
-                                <div class="professor-stds-int">
-                                    <span style="color: white;">
-                                        Machine Learning <br>
-                                        Natural Language Processing <br>
-                                        Deep Learning
-                                        <br> Big Data Analytics
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
-                            <div class="panel-body custom-panel-jw">
-                                <img alt="logo" class="img-circle m-b" style="width: 45%;"
-                                    src="img/contact/priyanka.jpg">
-                                <h3><a href="http://www.iiitkota.ac.in/priyankaharjule">Dr. Priyanka Harjule</a></h3>
-                                <p class="all-pro-ad">Assistant Professor</p>
-                                <p>
-                                    Mathematics<br>
-                                    <strong>Email: </strong><a
-                                        href="mailto:parikshit@iiitkota.ac.in">Priyanka.maths@iiitkota.ac.in</a> <br>
-                                    <strong>Contact:</strong><a href="tel: +91-9549650321">+91-9549650321</a>
-                                </p>
-                            </div>
-                            <div class="panel-footer contact-footer">
-                                <div class="professor-stds-int">
-                                    <span style="color: white;">
-                                        Fractional Calculus <br>
-                                        Applications of Fractional Calculus <br>
-                                        <br>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
-                            <div class="panel-body custom-panel-jw">
-                                <img alt="logo" class="img-circle m-b" style="width: 45%;"
-                                    src="img/contact/amit_garg.jpg">
-                                <h3><a href="http://www.iiitkota.ac.in/parikshit">Dr. Amit Kumar Garg</a></h3>
-                                <p class="all-pro-ad">Assistant Professor</p>
-                                <p>
-                                    Electronics Comm. and Engineering <br>
-                                    <strong>Email: </strong><a
-                                        href="mailto:amit.ece@iiitkota.ac.in">amit.ece@iiitkota.ac.in</a> <br>
-                                    <strong>Contact:</strong><a href="tel: +91-9549650432">+91-9549650432</a>
-                                </p>
-                            </div>
-                            <div class="panel-footer contact-footer">
-                                <div class="professor-stds-int">
-                                    <span style="color: white;">
-                                        High-Speed Optical Networks, Smart and Intelligent ML based Optical Networks
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
-                            <div class="panel-body custom-panel-jw">
-                                <img alt="logo" class="img-circle m-b" style="width: 45%;" src="img/contact/basant.jpg">
-                                <h3><a href="http://www.iiitkota.ac.in/parikshit">Dr. Basant Agarwal</a></h3>
-                                <p class="all-pro-ad">Assistant Professor</p>
-                                <p>
-                                    Computer Science and Engineering <br>
-                                    <strong>Email: </strong><a
-                                        href="mailto:parikshit@iiitkota.ac.in">basant.cse@iiitkota.ac.in</a> <br>
-                                    <strong>Contact:</strong><a href="tel: +91-9549650345">+91-9549650345</a>
-                                </p>
-                            </div>
-                            <div class="panel-footer contact-footer">
-                                <div class="professor-stds-int">
-                                    <span style="color: white;">
-                                        Machine Learning <br>
-                                        Natural Language Processing <br>
-                                        Deep Learning
-                                        <br> Big Data Analytics
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
-                            <div class="panel-body custom-panel-jw">
-                                <img alt="logo" class="img-circle m-b" style="width: 45%;" src="img/contact/basant.jpg">
-                                <h3><a href="http://www.iiitkota.ac.in/parikshit">Dr. Basant Agarwal</a></h3>
-                                <p class="all-pro-ad">Assistant Professor</p>
-                                <p>
-                                    Computer Science and Engineering <br>
-                                    <strong>Email: </strong><a
-                                        href="mailto:parikshit@iiitkota.ac.in">basant.cse@iiitkota.ac.in</a> <br>
-                                    <strong>Contact:</strong><a href="tel: +91-9549650345">+91-9549650345</a>
-                                </p>
-                            </div>
-                            <div class="panel-footer contact-footer">
-                                <div class="professor-stds-int">
-                                    <span style="color: white;">
-                                        Machine Learning <br>
-                                        Natural Language Processing <br>
-                                        Deep Learning
-                                        <br> Big Data Analytics
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
-                            <div class="panel-body custom-panel-jw">
-                                <img alt="logo" class="img-circle m-b" style="width: 45%;" src="img/contact/basant.jpg">
-                                <h3><a href="http://www.iiitkota.ac.in/parikshit">Dr. Basant Agarwal</a></h3>
-                                <p class="all-pro-ad">Assistant Professor</p>
-                                <p>
-                                    Computer Science and Engineering <br>
-                                    <strong>Email: </strong><a
-                                        href="mailto:parikshit@iiitkota.ac.in">basant.cse@iiitkota.ac.in</a> <br>
-                                    <strong>Contact:</strong><a href="tel: +91-9549650345">+91-9549650345</a>
-                                </p>
-                            </div>
-                            <div class="panel-footer contact-footer">
-                                <div class="professor-stds-int">
-                                    <span style="color: white;">
-                                        Machine Learning <br>
-                                        Natural Language Processing <br>
-                                        Deep Learning
-                                        <br> Big Data Analytics
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+                    
                 </div>
             </div>
         </div>
