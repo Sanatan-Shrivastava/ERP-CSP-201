@@ -1,6 +1,6 @@
 <?php
 
-$con=mysqli_connect('localhost','root','','ERP');
+$con=mysqli_connect('localhost','root','','erp_iiitk');
 
 
 if(!$con){
