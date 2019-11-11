@@ -398,8 +398,8 @@
                         while($i <= $result->num_rows){
                             $data=mysqli_fetch_assoc($result);
                            echo '<div style="margin-top:20px;" class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
-                            <div class="panel-body custom-panel-jw">
+                        <div style="height:250px;" class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
+                            <div style="margin-top:10px;" class="panel-body custom-panel-jw">
                                 <img alt="logo" class="img-circle m-b" style="width: 45%;" src="data:image/jpeg;base64,' . base64_encode($data['Logo']) . '">
                                 <h3>'.$data['Event Date'].'</h3>
                             </div>
