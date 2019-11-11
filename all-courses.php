@@ -384,7 +384,7 @@
                 <th>Course Instructor</th>
             </tr>
         <?php
-            $con=mysqli_connect('localhost','root','','login');
+            $con=mysqli_connect('localhost','root','','erp_iiitk');
             
             if(!$con){
             
