@@ -379,7 +379,7 @@
                         </div>
             <!-- <img src="IIITK_Academic_Calendar_2019-20.jpg"></img> -->
             <?php
-               $con=mysqli_connect('localhost','root','','login');
+               $con=mysqli_connect('localhost','root','','erp_iiitk');
                 if(!$con){
                    echo "Connection failed";
                 }
