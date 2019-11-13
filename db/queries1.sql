@@ -2,6 +2,7 @@
 CREATE TABLE `erp_iiitk`.`gen_info` ( `id` VARCHAR(50) NOT NULL , `name` VARCHAR(50) NOT NULL , `email` VARCHAR(50) NOT NULL , `a_email` VARCHAR(50) NOT NULL , `mobile` VARCHAR(40) NOT NULL , `martial_status` VARCHAR(20) NOT NULL , `aadhar` VARCHAR(30) NOT NULL , `blood_group` VARCHAR(10) NOT NULL ) ENGINE = InnoDB;
 ALTER TABLE `gen_info` ADD PRIMARY KEY( `id`);
 INSERT INTO `gen_info` (`id`, `name`, `email`, `a_email`, `mobile`, `martial_status`, `aadhar`, `blood_group`) VALUES ('2018kucp1092', 'Shaktiraj Daudra', '2018kucp1092@gmail.com', 'shaktirajdaudra@gmail.com', '7359802004', 'Single', '1111222233334444', 'A+');
+INSERT INTO `gen_info` (`id`, `name`, `email`, `a_email`, `mobile`, `martial_status`, `aadhar`, `blood_group`) VALUES ('2018kucp1087', 'Ajay Sharma', '2018kucp1087@iiitkota.ac.in', 'ajaysharma@gmail.com', '7231994697', 'Single', '111122223333', 'A+'), ('2018kucp1088', 'Yash Singh', '2018kucp1088@iiitkota.ac.in', 'yashsingh@gmail.com', '7989798979', 'Single', '222233334444', 'B+');
 
 -- bank_info
 CREATE TABLE `erp_iiitk`.`bank_info` ( `id` VARCHAR(50) NOT NULL , `ac_no` VARCHAR(50) NOT NULL , `ac_name` VARCHAR(100) NOT NULL , `ifsc` VARCHAR(50) NOT NULL ) ENGINE = InnoDB;
